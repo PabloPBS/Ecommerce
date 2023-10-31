@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsividade.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
@@ -12,15 +13,17 @@
         <nav>
             <img id="logo" src="./images/logo-ex.png" alt="Store" height="50">
 
-            <ul id="menu">
-                <li><a class="menu-items" href="#">Home</a></li>
-                <li><a class="menu-items" href="#">Produtos</a></li>
-                <li><a class="menu-items" href="#">Sobre</a></li>
-                <li><a class="menu-items" href="#">Contato</a></li>
-                <li><i id="bolsa" class="material-symbols-outlined menu-items">shopping_bag</i></li>
-                <button id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
-            </ul>
-            <button id="abrir-menu" class="botao-menu"><i class="material-symbols-outlined">menu</i></button>
+                <div>
+                    <i id="bolsa" class="material-symbols-outlined menu-items">shopping_bag</i>
+                    <ul id="menu">
+                        <li><a class="botao-menu" href="#">Home</a></li>
+                        <li><a class="botao-menu" href="#">Produtos</a></li>
+                        <li><a class="botao-menu" href="#">Sobre</a></li>
+                        <li><a class="botao-menu" href="#">Contato</a></li>
+                        <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
+                    </ul>
+                </div>
+            <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
         </nav>
     </header>
     <main>
@@ -213,7 +216,8 @@
             </div>
         </section>
     </main>
-
+    
     <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
