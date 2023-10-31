@@ -8,7 +8,6 @@ for (let i = 0; i < botoesMenu.length; i++) {
 }
 
 function show() {
-    console.log('a')
     menuMobile.style.display= 'flex'
     menuMobile.style.top = 0
 }
