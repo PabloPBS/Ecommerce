@@ -180,7 +180,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 400px;
-    width: 400px;
+    width: 30vw;
     padding: 10px;
     border-radius: 15px;
     background-color: var(--azul);
@@ -236,7 +236,7 @@ nav {
     justify-content: space-evenly;
     color: var(--black);
     height: 450px;
-    width: 350px;
+    width: 22vw;
     padding: 10px;
     background-color: var(--azul-claro);
     border-radius: 10px;
