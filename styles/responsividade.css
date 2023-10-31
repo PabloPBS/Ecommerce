@@ -17,8 +17,12 @@
 
     #menu > li {
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.381);
         border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #menu > li > a {
+        color: black;
     }
 
     #fechar-menu {
@@ -79,6 +83,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    #bolsa {
+        left: 30px;
+    }
+
     #apresentacao-texto {
         margin: 20px;
     }

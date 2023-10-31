@@ -109,6 +109,10 @@ nav > div {
     margin: 50px;
 }
 
+#apresentacao-destaque {
+    color: var(--vinho);
+}
+
 #apresentacao-texto > h1 {
     font-size: 3rem;   
 }
