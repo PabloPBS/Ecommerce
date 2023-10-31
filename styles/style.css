@@ -109,10 +109,6 @@ nav > div {
     margin: 50px;
 }
 
-#apresentacao-texto span {
-    color: var(--vermelho);
-}
-
 #apresentacao-texto > h1 {
     font-size: 3rem;   
 }
