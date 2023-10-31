@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="./images/logo-ex.png" alt="Store" height="50">
+
+            <ul id="menu">
+                <li><a class="menu-items" href="#">Home</a></li>
+                <li><a class="menu-items" href="#">Produtos</a></li>
+                <li><a class="menu-items" href="#">Sobre</a></li>
+                <li><a class="menu-items" href="#">Contato</a></li>
+                <li><i id="bolsa" class="material-symbols-outlined menu-items">shopping_bag</i></li>
+                <button id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
+            </ul>
+            <button id="abrir-menu" class="botao-menu"><i class="material-symbols-outlined">menu</i></button>
+        </nav>
+    </header>
+    <main>
+        <section id="apresentacao">
+            <div id="apresentacao-texto">
+                <h1>ULTRAPASSE DE <span>NÍVEL</span></h1>
+                <p>Laptops, acessórios e componentes de PC de qualidade você encontra aqui!</p>
+                <span>Produtos com até 70% OFF!</span>
+                <a id="button-link" href="#produtos-destaque"><button id="apresentacao-button">Veja nossos produtos<i class="material-symbols-outlined">arrow_downward</i></button></a>
+            </div>
+            <img src="./images/laptop.jpg" alt="Acer Nitro 5" id="apresentacao-img" height="400">
+        </section>
+        <section id="categoria">
+            <h1>PRODUTOS DISPONÍVEIS</h1>
+            <div id="categoria-title" class="border-botton"></div>
+
+            <div id="produtos-container">
+                <div id="laptops" class="produtos">
+                    <h2 class="produtos-titulo">Laptops para todos os gostos</h2>
+                    <img class="produtos-img" src="./images/ideapad-gaming.webp" alt="Ideapad Gaming 3" height="300px">
+                </div>
+                <div id="componentes" class="produtos">
+                    <h2 class="produtos-titulo">Componentes para turbinar seu PC</h2>
+                    <img class="produtos-img" src="./images/componentes.png" alt="Componentes" height="300px">
+                </div>
+                <div id="acessórios" class="produtos">
+                    <h2 class="produtos-titulo">Acessórios que você merece</h2>
+                    <img class="produtos-img" src="./images/acessorios.png" alt="Acessórios" height="300px">
+                </div>
+            </div>
+        </section>
+        <section id="produtos-destaque">
+            <h1>PRODUTOS EM DESTAQUE</h1>
+            <span>Produtos mais buscados na nossa loja</span>
+            <div id="produtos-destaque-title" class="border-botton"></div>
+
+            <div id="cards-container">
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./images/produto-ex.jpg" width="300" alt="Ex">
+                    <span>Logitec</span>
+                    <div>
+                        <p class="cards-name">Produto Ex</p>
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cards-price">R$100</p>
+                        <button class="material-symbols-outlined">add_shopping_cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
+</body>
+</html>
