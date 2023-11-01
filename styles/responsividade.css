@@ -82,6 +82,50 @@
     #produtos-destaque {
         padding: 5px;
     }
+
+    #recomendado {
+        flex-direction: column;
+    }
+
+    #recomendado-img {
+        width: 50vw;
+    }
+
+    #recomendado-texto {
+        width: 80vw;
+        margin-top: 50px;
+    }
+
+    #avaliacoes {
+        flex-direction: column;
+    }
+
+    .avaliacoes-card {
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+
+    .avaliacoes-card > img {
+        width: 5vw;
+    }
+
+    #informacoes {
+        flex-direction: column;
+    }
+
+    #informacoes-sobre > p {
+        width: 90vw;
+    }
+
+    #quick-links {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    #informacoes-contatos {
+        width: 90vw;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -99,5 +143,9 @@
     .cards {
         width: 90vw;
         margin: 0 auto;
+    }
+
+    .avaliacoes-card {
+        width: 85vw;
     }
 }
