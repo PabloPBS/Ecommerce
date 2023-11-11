@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --azul-marinho: #364659;
+    --azul: #7C87A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login-main {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login-main > h1 {
+    text-align: center;
+}
+
+#login-main > span {
+    display: block;
+    font-size: .9rem;
+    text-align: center;
+}
+
+#login-main > span > a {
+    color: var(--azul);
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 3px solid var(--azul);
+    transition: border .1s ease-in;
+}
+
+#login-main > span > a:hover {
+    border-bottom: 4px solid var(--azul);
+}
+
+#login-main > h1 > i {
+    margin-right: 15px;
+}
+
+#login-main > p {
+    margin: 20px 0;
+    text-align: center;
+    opacity: 80%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#login-form > label {
+    margin: 20px 0;
+}
+
+#login-form span {
+    color: red;
+}
+
+#login-form > input:not([type='submit']) {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#login-form > input:not([type='submit']):focus {
+    background-color: rgba(1, 1, 1, 0.05);
+}
+
+#login-form > input:not([type='submit']):invalid {
+    border: 1px solid red;
+}
+
+#login-form > button[type='submit'] {
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--azul-marinho);
+    color: white;
+    cursor: pointer;
+}
+
+#login-form > button[type='submit']:hover {
+    background-color: #26313f;
+}
+
+#login-img {
+    background-color: var(--azul-marinho);
+    height: 100vh;
+    width: calc(100% - 600px);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+img {
+    width: 40vw;
+    height: auto;
+    float: right;
+}
