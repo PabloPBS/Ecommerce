@@ -26,6 +26,7 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     padding-top: 80px;
+    overflow-x: hidden  ;
 }
 
 header {
@@ -64,20 +65,86 @@ nav > div {
     color: var(--azul);
 }
 
-#login-link {
+#tooltip-container {
     position: relative;
     top: 20px;
     left: 40px;
     color: var(--branco);
     transition: color .3s ease;
+    cursor: default;
 }
 
-#login-link:hover {
+#tooltip-container:hover {
     color: var(--azul);
 }
 
 #login-icon {
     font-size: 2rem;
+}
+
+#tooltip {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background-color: var(--branco);
+    color: var(--black);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    top: 60%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity .3s;
+    position: absolute;
+    z-index: 1;
+}
+
+#tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+#tooltip > p {
+    font-size: .8rem;
+    width: 90%;
+}
+
+#tooltip-container:hover #tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-links {
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.tooltip-links:hover {
+    opacity: 80%;
+}
+
+#tooltip-login {
+    background-color: var(--azul);
+    color: white;
+}
+
+#tooltip-cadastro {
+    color: var(--azul);
+    border: 3px solid var(--azul);
 }
 
 #menu {

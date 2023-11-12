@@ -29,9 +29,13 @@
         display: block;
     }
 
-    #login-link {
+    #tooltip-container {
         top: 2px;
         left: 130px;
+    }
+
+    #tooltip {
+        top: 100%;
     }
 
     #apresentacao {
@@ -123,7 +127,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    #login-link {
+    #tooltip-container {
         left: 30px;
     }
 

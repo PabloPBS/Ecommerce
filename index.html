@@ -21,7 +21,14 @@
                         <li><a class="botao-menu" href="#">Contato</a></li>
                         <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
                     </ul>
-                    <a id="login-link" href="login.html"><i id="login-icon" class="material-symbols-outlined">account_circle</i></a>
+                    <div id="tooltip-container">
+                        <i id="login-icon" class="material-symbols-outlined">account_circle</i>
+                        <span id="tooltip">
+                            <p>Acesse sua conta para uma melhor experiência</p>
+                            <a id="tooltip-login" class="tooltip-links" href="login.html">Entrar</a>
+                            <a id="tooltip-cadastro" class="tooltip-links" href="cadastro.html">Cadastrar</a>
+                        </span>
+                    </div>
                 </div>
             <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
         </nav>
@@ -306,6 +313,6 @@
     </main>
     
     <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/menuMobile.js"></script>
 </body>
 </html>
