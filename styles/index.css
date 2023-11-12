@@ -71,6 +71,9 @@ nav > div {
     color: var(--branco);
     transition: color .3s ease;
     cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #tooltip-container:hover {
