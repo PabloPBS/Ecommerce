@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
@@ -14,12 +15,13 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
 
 #login-main {
-    width: 400px;
+    width: 30%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +109,7 @@ body {
 #login-img {
     background-color: var(--azul-marinho);
     height: 100vh;
-    width: calc(100% - 600px);
+    width: calc(100% - 40%);
     display: grid;
     align-content: center;
     justify-content: center;

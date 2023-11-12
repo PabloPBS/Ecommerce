@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 800px) {
+    #login-img {
+        display: none;
+    }
+
+    #login-main {
+        width: 80%;
+    }
+}
