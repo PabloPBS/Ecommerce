@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #fafafa;
+    --black: #262526;
+    --vinho: #8C3041;
+    --azul: #7C87A6;
+    --azul-claro: #D5DCF2;
+    --azul-marinho: #364659;
+    --vermelho: #591E1E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+#form-container {
+    max-width: 800px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1.25em;
+}
+
+.input-container > input {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.input-container > label {
+    position: absolute;
+    padding: 0 5px;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+
+input, label {
+    font-size: 1em;
+}
+
+input:focus + label,
+input:valid + label {
+    color: #424242;
+    font-size: .75rem;
+    top: -8px;
+    pointer-events: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}

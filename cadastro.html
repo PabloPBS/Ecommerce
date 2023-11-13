@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+</head>
+<body>
+    <h1>CRIAR CONTA</h1>
+    <span>(<span class="obrigatorio">*</span>) campos obrigatórios</span>
+    <div id="form-container">
+        <form action="#" method="post">
+            <div class="input-container">
+                <input type="text" name="nome" id="nome" autocomplete="cc-name" required>
+                <label for="nome"><span class="obrigatorio">*</span>Nome completo</label>
+            </div>
+            <div class="input-container">
+                <input type="number" name="cpf" id="cpf" required>
+                <label for="cpf"><span class="obrigatorio">*</span>CPF</label>
+            </div>
+            <div class="input-container">
+                <input type="date" name="dataNasc" id="dataNasc" autocomplete="bday" required>
+                <label for="dataNasc"><span class="obrigatorio">*</span>Data de nascimento</label>
+            </div>
+            <div class="input-container">
+                <input type="tel" name="telefone" id="telefone" autocomplete="tel" required>
+                <label for="telefone"><span class="obrigatorio">*</span>Telefone</label>
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" id="email" autocomplete="email" required>
+                <label for="email"><span class="obrigatorio">*</span>E-mail</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="novaSenha" id="novaSenha" autocomplete="new-password" required>
+                <label for="novaSenha"><span class="obrigatorio">*</span>Crie sua senha</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="confirmarSenha" id="confirmarSenha" required>
+                <label for="confirmarSenha"><span class="obrigatorio">*</span>Confirme sua senha</label>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox" name="span" id="span">
+                <label for="span">Quero receber ofertas e novidades por e-mail, SMS, WhatsApp ou mensagens nos App's KaBuM!</label>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox" name="politicas" id="politicas">
+                <label for="politicas">Li e estou de acordo com as políticas da empresa e políticas de privacidade.*</label>
+            </div>
+            <div class="button-submit">
+                <button type="submit">CRIAR</button>
+            </div>
+        </form>
+    </div>
+    <p>Já possui cadastro? <a href="login.html">ENTRAR</a></p>
+</body>
+</html>
