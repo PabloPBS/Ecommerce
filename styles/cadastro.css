@@ -32,6 +32,7 @@ body {
 
 #form-container {
     max-width: 800px;
+    padding-top: 30px;
     margin: auto;
 }
 
@@ -174,4 +175,9 @@ input[type='checkbox']:checked::after{
 
 #link-login:hover {
     border-bottom: 5px solid var(--azul);
+}
+
+
+p {
+    padding: 20px 0;
 }
