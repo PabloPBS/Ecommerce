@@ -13,24 +13,30 @@
         <nav>
             <img id="logo" src="./images/logo-ex.png" alt="Store" height="40">
 
-                <div>
-                    <ul id="menu">
-                        <li><a class="botao-menu" href="#">Home</a></li>
-                        <li><a class="botao-menu" href="#">Produtos</a></li>
-                        <li><a class="botao-menu" href="#">Sobre</a></li>
-                        <li><a class="botao-menu" href="#">Contato</a></li>
-                        <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
-                    </ul>
-                    <div id="tooltip-container">
-                        <i id="login-icon" class="material-symbols-outlined">account_circle</i>
-                        <span id="tooltip">
-                            <p>Acesse sua conta para uma melhor experiência</p>
-                            <a id="tooltip-login" class="tooltip-links" href="login.html">Entrar</a>
-                            <a id="tooltip-cadastro" class="tooltip-links" href="cadastro.html">Cadastrar</a>
-                        </span>
-                    </div>
+            <div>
+                <form id="form-pesquisa" action="#" method="get">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Busca...">
+                    <button type="submit" id="pesquisa-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul id="menu">
+                    <li><a class="botao-menu" href="#">Home</a></li>
+                    <li><a class="botao-menu" href="#">Produtos</a></li>
+                    <li><a class="botao-menu" href="#">Sobre</a></li>
+                    <li><a class="botao-menu" href="#">Contato</a></li>
+                    <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
+                </ul>
+            </div>
+            <div>
+                <div id="tooltip-container">
+                    <i id="login-icon" class="material-symbols-outlined">account_circle</i>
+                    <span id="tooltip">
+                        <p>Acesse sua conta para uma melhor experiência</p>
+                        <a id="tooltip-login" class="tooltip-links" href="login.html">Entrar</a>
+                        <a id="tooltip-cadastro" class="tooltip-links" href="cadastro.html">Cadastrar</a>
+                    </span>
                 </div>
-            <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
+                <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
+            </div>
         </nav>
     </header>
     <main>

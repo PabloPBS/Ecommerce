@@ -38,10 +38,11 @@ header {
     border-bottom: 2px solid var(--vermelho);
     z-index: 999;
 }
+
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
 }
@@ -50,8 +51,31 @@ nav > div {
     display: flex;
 }
 
+#form-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pesquisa {
+    max-width: 400px;
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid var(--azul);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#pesquisa-button {
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 #abrir-menu, #fechar-menu {
-    display: none;
+    display: block;
     background: none;
     border: none;
     color: var(--branco);
@@ -60,14 +84,18 @@ nav > div {
     transition: color .3s ease;
 }
 
+#abrir-menu {
+    display: block;
+    margin-left: 50px;
+}
+
 #abrir-menu:hover, #fechar-menu:hover {
     color: var(--azul);
 }
 
 #tooltip-container {
-    position: relative;
+    position: absolute;
     top: 20px;
-    left: 40px;
     color: var(--branco);
     transition: color .3s ease;
     cursor: default;
@@ -97,8 +125,8 @@ nav > div {
     text-align: center;
     padding: 5px 0;
     border-radius: 20px;
-    top: 60%;
-    left: 50%;
+    top: 90%;
+    left: 55%;
     margin-left: -100px;
     opacity: 0;
     transition: opacity .3s;
@@ -150,6 +178,19 @@ nav > div {
 }
 
 #menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100dvh;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: top 1s ease;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
 }
 

@@ -16,5 +16,6 @@ function show() {
 
 function hide() {
     menuMobile.style.top = '-120%'
+    menuMobile.style.display = 'none'
     body.style.overflow = 'auto'
 }

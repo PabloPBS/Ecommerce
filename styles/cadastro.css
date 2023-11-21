@@ -62,7 +62,7 @@ body {
     width: 100%;
     padding: 15px 20px;
     border-radius: 8px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .input-container > label {
@@ -70,7 +70,7 @@ body {
     padding: 0 5px;
     top: 15px;
     left: 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     color: #424242;
     display: flex;
     align-items: center;
@@ -81,6 +81,10 @@ body {
 .input-container > input, 
 .input-container > label {
     font-size: 1em;
+}
+
+.input-container > input:focus {
+    border-bottom: 2px solid var(--azul);
 }
 
 .input-container > input:focus + label,
