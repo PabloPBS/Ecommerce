@@ -75,10 +75,10 @@ nav > div {
 }
 
 #abrir-menu, #fechar-menu {
+    color: var(--branco);
     display: block;
     background: none;
     border: none;
-    color: var(--branco);
     padding: 10px;
     cursor: pointer;
     transition: color .3s ease;
@@ -179,42 +179,56 @@ nav > div {
 
 #menu {
     display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     height: 100dvh;
+    width: 300px;
     top: 0;
     right: 0;
     left: 0;
-    transition: top 1s ease;
+    transition: left 1s ease;
     position: fixed;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--black);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
 
-#menu > li {
-    display: inline-block;
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu li {
+    color: var(--branco);
     list-style-type: none;
     padding: 20px;
 }
 
-#menu > li > a {
-    text-decoration: none;
-    color: var(--branco);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
 .botao-menu {
-    transition: .2s ease-in-out;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .botao-menu:hover {
-    color: var(--azul) !important; 
-    border-bottom: 5px solid var(--azul);
+    background-color: #181818;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown li {
+    background-color: #181818;
+    font-size: .9rem; 
+    padding: 10px 22px !important;
+}
+
+.dropdown li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    color: var(--azul);
 }
 
 #apresentacao {

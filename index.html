@@ -19,11 +19,16 @@
                     <button type="submit" id="pesquisa-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul id="menu">
-                    <li><a class="botao-menu" href="#">Home</a></li>
-                    <li><a class="botao-menu" href="#">Produtos</a></li>
-                    <li><a class="botao-menu" href="#">Sobre</a></li>
-                    <li><a class="botao-menu" href="#">Contato</a></li>
-                    <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
+                    <li id="top"><img src="./images/logo-ex.png" alt="Store" height="40"> <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button></li>
+                    <li>CATEGORIAS</li>
+                    <li class="botao-menu">Hardware <i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Processadores</a></li>
+                        <li><a href="#">Placa de Vídeo</a></li>
+                        <li><a href="#">Memórias</a></li>
+                        <li><a href="#">Placa Mãe</a></li>
+                    </ul>
+                    <li class="botao-menu">Periféricos <i class="fa-solid fa-chevron-down"></i></li>
                 </ul>
             </div>
             <div>
@@ -320,5 +325,6 @@
     
     <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
     <script src="scripts/menuMobile.js"></script>
+    <script src="scripts/dropdownMenu.js"></script>
 </body>
 </html>
