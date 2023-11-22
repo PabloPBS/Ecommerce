@@ -87,8 +87,9 @@ nav > div {
     transition: color .3s ease;
 }
 
-#abrir-menu {
-    display: block;
+#abrir-menu > i {
+    position: relative;
+    z-index: -1;
 }
 
 #abrir-menu:hover, #fechar-menu:hover {

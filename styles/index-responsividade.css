@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 500px) {
     #abrir-menu {
-        margin-left: 0;
+        margin-right: -40px;
     }
     #tooltip-container {
         display: none;
