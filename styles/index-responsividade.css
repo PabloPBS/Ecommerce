@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 1000px) {
 
+    #tooltip-container {
+        display: none;
+    }
+
     #tooltip {
         top: 100%;
     }

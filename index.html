@@ -11,7 +11,10 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="./images/logo-ex.png" alt="Store" height="40">
+            <div>
+                <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
+                <img id="logo" src="./images/logo-ex.png" alt="Store" height="40">
+            </div>
 
             <div>
                 <form id="form-pesquisa" action="#" method="get">
@@ -19,16 +22,44 @@
                     <button type="submit" id="pesquisa-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul id="menu">
-                    <li id="top"><img src="./images/logo-ex.png" alt="Store" height="40"> <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button></li>
+                    <li id="top">
+                        <h1 id="menu-h1"><a class="button-link" href="login.html"><i class="material-symbols-outlined">account_circle</i>Olá. Faça seu login</a></h1>
+                        <button onclick="hide()" id="fechar-menu" class="botao-menu"><i class="material-symbols-outlined">close</i></button>
+                    </li>
                     <li>CATEGORIAS</li>
-                    <li class="botao-menu">Hardware <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="botao-menu">Hardware<i class="fa-solid fa-chevron-down"></i></li>
                     <ul class="dropdown">
                         <li><a href="#">Processadores</a></li>
                         <li><a href="#">Placa de Vídeo</a></li>
                         <li><a href="#">Memórias</a></li>
                         <li><a href="#">Placa Mãe</a></li>
                     </ul>
-                    <li class="botao-menu">Periféricos <i class="fa-solid fa-chevron-down"></i></li>
+                    <li class="botao-menu">Periféricos<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Teclado</a></li>
+                        <li><a href="#">Fone de Ouvido</a></li>
+                        <li><a href="#">Webcam</a></li>
+                    </ul>
+                    <li class="botao-menu">Monitores<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Monitores Gamer</a></li>
+                        <li><a href="#">Monitor Casa e Escritório</a></li>
+                        <li><a href="#">Suporte Monitor/Tv</a></li>
+                        <li><a href="#">Acessórios para Monitor</a></li>
+                    </ul>
+                    <li class="botao-menu">Notebooks<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Notebooks Gamer</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Refrigeração e Bases</a></li>
+                        <li><a href="#">Carregadores e Fontes</a></li>
+                    </ul>
+                    <li>AJUDA E CONFIGURAÇÕES</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="material-symbols-outlined">account_circle</i>Minha Conta</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-circle-info"></i>Quem Somos</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-id-card"></i>Atendimento ao Cliente</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-cart-shopping"></i>Como Comprar</li>
                 </ul>
             </div>
             <div>
@@ -40,7 +71,6 @@
                         <a id="tooltip-cadastro" class="tooltip-links" href="cadastro.html">Cadastrar</a>
                     </span>
                 </div>
-                <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
             </div>
         </nav>
     </header>
@@ -50,7 +80,7 @@
                 <h1>ULTRAPASSE DE <span id="apresentacao-destaque">NÍVEL</span></h1>
                 <p>Laptops, acessórios e componentes de PC de qualidade você encontra aqui!</p>
                 <span>Produtos com até 70% OFF!</span>
-                <a id="button-link" href="#"><button id="apresentacao-button">Veja nossos produtos<i class="material-symbols-outlined">arrow_downward</i></button></a>
+                <a class="button-link" href="#"><button id="apresentacao-button">Veja nossos produtos<i class="material-symbols-outlined">arrow_downward</i></button></a>
             </div>
             <img src="./images/laptop.jpg" alt="Acer Nitro 5" id="apresentacao-img" height="400">
         </section>
@@ -238,7 +268,7 @@
             <div id="recomendado-texto">
                 <h1>GLOBAL AMAZFIT BIP 3</h1>
                 <p>Mergulhe na grande tela colorida HD de 1,69" e veja todas as chamadas e textos recebidos com uma qualidade impressionante e ampla. Aplicações suportadas: Medição de oxigênio no sangue, monitoramento de freqüência cardíaca, rastreamento esportivo, mídia social, pedômetro. Tecnologia de conectividade: Bluetooth. Padrão de comunicação sem fio: Bluetooth</p>
-                <a id="button-link" href="#"><button id="recomendado-button">Saiba mais <i class="material-symbols-outlined">east</i></button></a>
+                <a class="button-link" href="#"><button id="recomendado-button">Saiba mais <i class="material-symbols-outlined">east</i></button></a>
             </div>
         </section>
         <section id="avaliacoes">
@@ -325,6 +355,5 @@
     
     <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
     <script src="scripts/menuMobile.js"></script>
-    <script src="scripts/dropdownMenu.js"></script>
 </body>
 </html>

@@ -42,13 +42,17 @@ header {
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
 
 nav > div {
     display: flex;
+}
+
+#logo {
+    margin-left: 50px;
 }
 
 #form-pesquisa {
@@ -79,14 +83,12 @@ nav > div {
     display: block;
     background: none;
     border: none;
-    padding: 10px;
     cursor: pointer;
     transition: color .3s ease;
 }
 
 #abrir-menu {
     display: block;
-    margin-left: 50px;
 }
 
 #abrir-menu:hover, #fechar-menu:hover {
@@ -96,6 +98,7 @@ nav > div {
 #tooltip-container {
     position: absolute;
     top: 20px;
+    right: 100px;
     color: var(--branco);
     transition: color .3s ease;
     cursor: default;
@@ -178,22 +181,37 @@ nav > div {
 }
 
 #menu {
-    display: none;
+    display: block;
     height: 100dvh;
     width: 300px;
     top: 0;
     right: 0;
-    left: 0;
+    left: -120%;
     transition: left 1s ease;
     position: fixed;
     background-color: var(--black);
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 999;
+    overflow: auto;
 }
 
 #top {
     display: flex;
     justify-content: space-between;
+}
+
+#menu-h1 {
+    font-size: 1.1rem;
+}
+
+#menu-h1 > a {
+    color: var(--branco);
+}
+
+#menu-h1 i {
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
 }
 
 #menu li {
@@ -208,8 +226,17 @@ nav > div {
     cursor: pointer;
 }
 
+.ajuda-configuracoes {
+    justify-content: flex-start;
+}
+
+.ajuda-configuracoes > i {
+    margin-right: 10px;
+}
+
+
 .botao-menu:hover {
-    background-color: #181818;
+    background-color: #181818 !important;
 }
 
 .dropdown {
@@ -220,6 +247,7 @@ nav > div {
     background-color: #181818;
     font-size: .9rem; 
     padding: 10px 22px !important;
+    text-indent: 30px;
 }
 
 .dropdown li a {
@@ -262,7 +290,7 @@ nav > div {
     opacity: 80%;
 }
 
-#button-link {
+.button-link {
     text-decoration: none;
 }
 
@@ -670,6 +698,7 @@ footer > #informacoes {
 footer .logo {
     width: auto;
     height: 40px;
+    padding-left: 50px;
 }
 
 footer a {
