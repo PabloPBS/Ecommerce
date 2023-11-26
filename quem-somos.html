@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-responsividade.css">
+    <link rel="stylesheet" href="styles/quem-somos.css">
+    <link rel="stylesheet" href="styles/quem-somos-responsividade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
+                <img id="logo" src="./images/logo-ex.png" alt="Store" height="40">
+            </div>
+
+            <div>
+                <form id="form-pesquisa" action="#" method="get">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Busca...">
+                    <button type="submit" id="pesquisa-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul id="menu">
+                    <li id="top">
+                        <h1 id="menu-h1"><a class="button-link" href="login.html"><i class="material-symbols-outlined">account_circle</i>Olá. Faça seu login</a></h1>
+                        <button onclick="hide()" id="fechar-menu"><i class="material-symbols-outlined">close</i></button>
+                    </li>
+                    <li>CATEGORIAS</li>
+                    <li class="botao-menu botao-dropdown">Hardware<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Processadores</a></li>
+                        <li><a href="#">Placa de Vídeo</a></li>
+                        <li><a href="#">Memórias</a></li>
+                        <li><a href="#">Placa Mãe</a></li>
+                    </ul>
+                    <li class="botao-menu botao-dropdown">Periféricos<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Teclado</a></li>
+                        <li><a href="#">Fone de Ouvido</a></li>
+                        <li><a href="#">Webcam</a></li>
+                    </ul>
+                    <li class="botao-menu botao-dropdown">Monitores<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Monitores Gamer</a></li>
+                        <li><a href="#">Monitor Casa e Escritório</a></li>
+                        <li><a href="#">Suporte Monitor/Tv</a></li>
+                        <li><a href="#">Acessórios para Monitor</a></li>
+                    </ul>
+                    <li class="botao-menu botao-dropdown">Notebooks<i class="fa-solid fa-chevron-down"></i></li>
+                    <ul class="dropdown">
+                        <li><a href="#">Notebooks Gamer</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Refrigeração e Bases</a></li>
+                        <li><a href="#">Carregadores e Fontes</a></li>
+                    </ul>
+                    <li>AJUDA E CONFIGURAÇÕES</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="material-symbols-outlined">account_circle</i>Minha Conta</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-circle-info"></i>Quem Somos</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-id-card"></i>Atendimento ao Cliente</li>
+                    <li class="botao-menu ajuda-configuracoes"><i class="fa-solid fa-cart-shopping"></i>Como Comprar</li>
+                </ul>
+            </div>
+            <div>
+                <div id="tooltip-container">
+                    <i id="login-icon" class="material-symbols-outlined">account_circle</i>
+                    <span id="tooltip">
+                        <p>Acesse sua conta para uma melhor experiência</p>
+                        <a id="tooltip-login" class="tooltip-links" href="login.html">Entrar</a>
+                        <a id="tooltip-cadastro" class="tooltip-links" href="cadastro.html">Cadastrar</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="quem-somos-text">
+            <h1>Quem Somos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aliquid iure est quia accusamus obcaecati blanditiis, adipisci officia libero tempora velit a sapiente vitae quisquam expedita vel amet dicta hic id accusantium autem cumque ipsa ratione. Nostrum eos nemo provident.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatem ducimus hic maxime ab quae voluptatibus architecto modi corrupti nobis atque tenetur provident impedit obcaecati quia accusantium exercitationem sapiente voluptatum assumenda mollitia earum, culpa ad ea quos! Iste, at beatae, vel aspernatur, non adipisci odit sunt est natus illum quas distinctio ea. Nisi alias aperiam ratione, corporis debitis quis reiciendis beatae consequatur omnis ullam veniam tempore hic eius, mollitia possimus praesentium cum ea illum perspiciatis error cupiditate voluptatem. Eum molestias necessitatibus voluptatum. Quam, magni pariatur culpa quas odit dolorum magnam sint inventore doloribus deserunt porro ipsa totam provident natus? At.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus aliquid numquam cum exercitationem provident repellendus at alias, cupiditate nulla. Sint modi consequuntur, eos corrupti aperiam nihil autem dolor quaerat praesentium nesciunt iure itaque alias ratione delectus reprehenderit, nemo culpa asperiores totam quam eligendi laboriosam eius. Eos magni iure eaque nam. Numquam, nisi doloribus iure aut minima provident ipsum perspiciatis et optio! Facere quo, voluptate natus voluptatum necessitatibus non velit?</p>
+        </div>
+        <div id="quem-somos-mapa">
+            <h1>Localização</h1>
+            <div id="mapa-container">
+                <div>
+                    <h2>LOJA FÍSICA: CAXIAS-MA</h2>
+                    <p>Rua Aarão Réis, 1000<br>
+                    Bairro: Centro CEP: 65606-020</p>
+                    <h2>Horários de Funcionamento:</h2>
+                    <p>Segunda a Sexta: 8h ás 19h<br>
+                    Sábado: 8h ás 13h
+                    <h2>Nossos Contatos:</h2>
+                    <p>Email: example@gmail.com<br>
+                    Telefone: (XX) XXXXX-XXXX</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.5124884855495!2d-43.35849446452105!3d-4.864701666253502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e923ca21895d7%3A0x2a354f9f21ac0aa1!2sUniFacema!5e0!3m2!1spt-BR!2sbr!4v1701006213568!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section id="informacoes">
+            <div id="informacoes-sobre">
+                <picture>
+                    <img class="logo" src="images/logo-ex.png" alt="Logo">
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem labore neque voluptatum consequatur sed! Quod repudiandae, rem iusto iste aliquid quisquam molestias repellendus nemo consequuntur expedita ipsum, ullam a.</p>
+                <div id="informacoes-contato">
+                    <h2>Contate-nos</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp"></i> (xx) x xxxx-xxxx</li>
+                        <li><i class="fa-regular fa-envelope"></i> example@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quick-links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Cupons</a></li>
+                    <li><a href="#">Politicas</a></li>
+                    <li><a href="#">Torne-se afiliado</a></li>
+                </ul>
+            </div>
+            <div id="informacoes-contatos">
+                <h2>Inscreva-se</h2>
+                <form action="#" method="get">
+                    <input type="email" name="form-email" id="form-email" autocomplete="email" placeholder="example@gmail.com">
+                    <input type="submit" value="Enviar">
+                </form>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
+    <script src="scripts/menuMobile.js"></script>
+</body>
+</html>

@@ -26,6 +26,7 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     padding-top: 80px;
+    background-color: var(--branco);
 }
 
 header {
@@ -188,7 +189,7 @@ nav > div {
     top: 0;
     right: 0;
     left: -120%;
-    transition: left 1s ease;
+    transition: left .5s ease;
     position: fixed;
     background-color: var(--black);
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
@@ -231,7 +232,16 @@ nav > div {
     justify-content: flex-start;
 }
 
-.ajuda-configuracoes > i {
+.ajuda-configuracoes a {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.ajuda-configuracoes i {
     margin-right: 10px;
 }
 
