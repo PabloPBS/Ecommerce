@@ -53,7 +53,7 @@ nav > div {
 }
 
 #logo {
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 #form-pesquisa {
@@ -91,6 +91,7 @@ nav > div {
 #abrir-menu > i {
     position: relative;
     z-index: -1;
+    margin-right: 25px;
 }
 
 #abrir-menu:hover, #fechar-menu:hover {

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>ByteStore</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-responsividade.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/favicon-white.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
             <div>
                 <button onclick="show()" id="abrir-menu"><i class="material-symbols-outlined">menu</i></button>
-                <img id="logo" src="./images/logo-ex.png" alt="Store" height="40">
+                <a href="index.html"><img id="logo" src="./images/logo-ex.png" alt="Store" height="50"></a>
             </div>
 
             <div>
@@ -56,10 +57,9 @@
                         <li><a href="#">Carregadores e Fontes</a></li>
                     </ul>
                     <li>AJUDA E CONFIGURAÇÕES</li>
-                    <li class="botao-menu ajuda-configuracoes"><a href="#"><i class="material-symbols-outlined">account_circle</i>Minha Conta</a></li>
+                    <li class="botao-menu ajuda-configuracoes"><a href="login.html"><i class="material-symbols-outlined">account_circle</i>Minha Conta</a></li>
                     <li class="botao-menu ajuda-configuracoes"><a href="quem-somos.html"><i class="fa-solid fa-circle-info"></i>Quem Somos</a></li>
-                    <li class="botao-menu ajuda-configuracoes"><a href="#"><i class="fa-solid fa-id-card"></i>Atendimento ao Cliente</a></li>
-                    <li class="botao-menu ajuda-configuracoes"><a href="#"><i class="fa-solid fa-cart-shopping"></i>Como Comprar</a></li>
+                    <li class="botao-menu ajuda-configuracoes"><a href="atendimento.html"><i class="fa-solid fa-id-card"></i>Atendimento ao Cliente</a></li>
                 </ul>
             </div>
             <div>
@@ -313,47 +313,47 @@
             </div>
         </section>
     </main>
-        <footer>
-            <section id="informacoes">
-                <div id="informacoes-sobre">
-                    <picture>
-                        <img class="logo" src="images/logo-ex.png" alt="Logo">
-                    </picture>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem labore neque voluptatum consequatur sed! Quod repudiandae, rem iusto iste aliquid quisquam molestias repellendus nemo consequuntur expedita ipsum, ullam a.</p>
-                    <div id="informacoes-contato">
-                        <h2>Contate-nos</h2>
-                        <ul>
-                            <li><i class="fa-brands fa-whatsapp"></i> (xx) x xxxx-xxxx</li>
-                            <li><i class="fa-regular fa-envelope"></i> example@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="quick-links">
-                    <h2>Links Úteis</h2>
+    <footer>
+        <section id="informacoes">
+            <div id="informacoes-sobre">
+                <picture>
+                    <img class="logo" src="images/logo-ex.png" alt="Logo">
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem labore neque voluptatum consequatur sed! Quod repudiandae, rem iusto iste aliquid quisquam molestias repellendus nemo consequuntur expedita ipsum, ullam a.</p>
+                <div id="informacoes-contato">
+                    <h2>Contate-nos</h2>
                     <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Cupons</a></li>
-                        <li><a href="#">Politicas</a></li>
-                        <li><a href="#">Torne-se afiliado</a></li>
+                        <li><i class="fa-brands fa-whatsapp"></i> (xx) x xxxx-xxxx</li>
+                        <li><i class="fa-regular fa-envelope"></i> example@gmail.com</li>
                     </ul>
                 </div>
-                <div id="informacoes-contatos">
-                    <h2>Inscreva-se</h2>
-                    <form action="#" method="get">
-                        <input type="email" name="form-email" id="form-email" autocomplete="email" placeholder="example@gmail.com">
-                        <input type="submit" value="Enviar">
-                    </form>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </section>
-        </footer>
-    
-    <script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
-    <script src="scripts/menuMobile.js"></script>
+            </div>
+            <div id="quick-links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Cupons</a></li>
+                    <li><a href="#">Politicas</a></li>
+                    <li><a href="#">Torne-se afiliado</a></li>
+                </ul>
+            </div>
+            <div id="informacoes-contatos">
+                <h2>Inscreva-se</h2>
+                <form action="#" method="get">
+                    <input type="email" name="form-email" id="form-email" autocomplete="email" placeholder="example@gmail.com">
+                    <input type="submit" value="Enviar">
+                </form>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+<script src="https://kit.fontawesome.com/aaa49a1d23.js" crossorigin="anonymous"></script>
+<script src="scripts/menuMobile.js"></script>
 </body>
 </html>

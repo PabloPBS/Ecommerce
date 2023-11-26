@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #fafafa;
+    --black: #262526;
+    --vinho: #8C3041;
+    --azul: #7C87A6;
+    --azul-claro: #D5DCF2;
+    --azul-marinho: #364659;
+    --vermelho: #591E1E;
+}
+
+body {
+    background-color: #222020;
+    color: var(--branco);
+}
+
+main > div {
+    width: 95%;
+    padding: 20px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.duvidas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.duvidas-opcoes {
+    background-color: var(--azul-marinho);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contato-opcoes {
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contato-opcoes > p {
+    margin-top: 10px;
+}
