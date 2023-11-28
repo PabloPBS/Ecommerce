@@ -45,7 +45,6 @@
 
     .cards {
         width: 45vw;
-        height: max-content;
         min-height: 340px;
     }
 
@@ -99,9 +98,15 @@
 }
 
 @media screen and (max-width: 500px) {
-    #abrir-menu {
-        margin-right: -40px;
+    #logo {
+        width: 50px;
+        height: auto;
     }
+
+    #pesquisa {
+        width: 40vw;
+    }
+
     #tooltip-container {
         display: none;
     }
